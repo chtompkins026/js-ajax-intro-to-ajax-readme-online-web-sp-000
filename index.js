@@ -15,14 +15,14 @@ function getCommits(el) {
   const name = el.dataset.repo
   const req = new XMLHttpRequest()
   req.addEventListener("load", showCommits)
-  req.open("GET", 'https://api.github.com/repos/octocat/' + name + '/commits')
+  req.open("GET", 'https://api.github.com/repos/chtompkins026/' + name + '/commits')
   req.send()
 }
 
 function getRepositories() {
   const req = new XMLHttpRequest()
   req.addEventListener("load", showRepositories);
-  req.open("GET", 'https://api.github.com/users/kfecho30/repos')
+  req.open("GET", 'https://api.github.com/users/chtompkins026/repos')
   req.send()
 }
 
